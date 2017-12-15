@@ -23,6 +23,50 @@ window.alert('こんにちは、JavaScript! \nガンガッテ勉強しましょ�
   var obj = { x:1, y:2, z:3 };
   console.log(obj.x);
 
+  //加算演算子
+  console.log(10 + 1);
+  console.log('10' + 1);
+  var today = new Date();
+  console.log(1234 + today)
+
+  //インクリメント演算子とデクリメント演算子
+  //x++  x = x + 1
+  //y--  y = y - 1
+  var x = 3;
+  var y = x++;
+  console.log(x);
+  console.log(y);
+
+  var x = 1;
+  var y = x;
+  x = 2;
+  console.log(y);
+
+  var data1 = [0, 1, 2];
+  var data2 = data1;
+  data1[0] = 5;
+  console.log(data2)
+
+  //定数の基本型
+  // const TAX = 1.08;
+  // TAX = 1.1; //エラー
+
+  // 定数の参照型
+  const datas = [ 1, 2, 3 ];
+  // datas = [ 4, 5, 6 ];
+  datas[0] = 10;
+  console.log(datas);
+
+  // 分割代入
+  // let data = [56, 40, 26, 82, 19, 17, 73, 99];
+  // let [x0, x1, x2, x3, x4, x5, x6, x7] = data
+
+  // console.log(x0);
+
+  //条件演算子
+  var x = 80;
+  console.log((x >= 70) ? '合格' : '不合格');
+
 </script>
   <a href="javascript:window.alert('こんにちは世界');">
   ダイアログを表示
